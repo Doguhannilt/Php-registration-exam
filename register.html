@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="static/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</head>
+<body>
+    <div id="message"></div>
+    <form id="registerForm" name="registerForm" method="post">
+        <div class="row">
+            <input type="text" id="firstName" name="firstName" placeholder="İsim" maxlength="50" required>
+            <input type="text" id="lastName" name="lastName" placeholder="Soy İsim" maxlength="50" required>
+        </div>
+
+        <div class="row">
+            <input type="email" id="email" name="email" placeholder="E-Posta" maxlength="100" required>
+        </div>
+
+        <div class="row">
+            <input type="password" id="password" name="password" placeholder="Şifre" maxlength="100" required>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Şifre Onay" maxlength="100" required>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <label for="dob">Doğum Tarihi:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="column">
+                <label for="gender">Cinsiyet:</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Erkek</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Kadın</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="submit-btn">
+            <input type="submit" value="Kayıt Ol">
+        </div>
+    </form>
+
+    <script src="./static/js/register.js"></script>
+</body>
+</html>
