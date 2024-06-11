@@ -1,4 +1,4 @@
-# Student Registration Form with PHP and MySQL
+# Student Registration Form with PHP
 
 ## Introduction
 This project aims to enhance students' skills in creating a user registration form using PHP and MySQL, processing form data, saving data to the database, and retrieving data from the database.
